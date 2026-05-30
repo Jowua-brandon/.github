@@ -1,0 +1,13 @@
+name: org-reusable-ci
+
+on:
+  workflow_call:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: CI placeholder
+        run: |
+          echo "Add repo-specific build/test steps here"
